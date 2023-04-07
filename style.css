@@ -4,21 +4,15 @@ html, body {
 
 body {
     margin: 0;
+    font-family: 'Roboto Slab', serif;
 }
 
 h2 {
     text-align: center;
 }
 
-#hero-section {
-    background-color:blue;
-    color:slategray;
-    text-align: center;
-    height: 360px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+h1 {
+    animation: phase-in 3s normal;
 }
 
 nav {
@@ -27,11 +21,13 @@ nav {
     justify-content: space-around;
     background-color: brown;
     color: black;
+    font-family: 'Roboto Slab', serif;
 }
 
 nav a {
     color: black;
     text-decoration: none;
+    
 }
 
 ul {
@@ -39,22 +35,9 @@ ul {
     flex-direction: column;
 }
 
-#skill-section {
-    border: 2px solid black;
-    padding: 20px 50px;
-    display: flex;
-    flex-direction: row;
-}
-
-#emoji-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-}
-
 li {
     text-align: left;
+    font-family: 'Roboto Slab', serif;
     
 }
 
@@ -74,18 +57,21 @@ footer p {
 }
 
 .project-section {
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+    padding-left: 10%;
 }
 
 .project-container {
     display: flex;
     flex-direction: row;
     justify-content:space-between;
+    align-items: center;
     padding: 25px 150px;
+    border: 2px solid rgb(125, 125, 126);
+    margin-top: 15px;
 }
 
 .project-image-container {
@@ -99,7 +85,67 @@ footer p {
     width: 200px;
 }
 
-!#project-2 {
+#project-one {
+    animation: slide-in-from-right 3s forwards;
+}
+
+ #project-two {
     display: flex;
-    flex-direction: row-reverse ;
+    flex-direction: important row-reverse ;
+    animation: slide-in-from-left 3s backwards;
+}
+
+#skill-section {
+    border: 2px solid black;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Roboto Slab', serif;
+}
+
+#emoji-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+#hero-section {
+    background-color:blue;
+    color:slategray;
+    text-align: center;
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@keyframes slide-in-from-right {
+    from {
+        transform: translateX(-100%);
+        border: none;
+    }
+    to {
+        transform: translateX(0);
+        border: 2px solid rgb(125, 125, 126);
+    }
+}
+
+@keyframes slide-in-from-left {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes phase-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
