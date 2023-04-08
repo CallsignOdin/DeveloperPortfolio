@@ -1,0 +1,162 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 5%;
+    font-size: 36px;
+}
+
+h1 {
+    animation: phase-in 3s normal;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: brown;
+    color: black;
+    font-family: 'Roboto Slab', serif;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    text-align: left;
+    font-family: 'Roboto Slab', serif;
+    
+}
+
+span {
+    padding-left: 5px;
+}
+
+footer {
+    position: absolute;
+    bottom: -50;
+    text-align: center;
+    width: 100%;
+}
+
+footer p {
+   display: inline-block;
+}
+
+.repeating-background {
+    position: absolute;
+    bottom: 1em;
+    right: -63em;
+    height: 54em;
+    max-width: none;
+}
+
+.project-section {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    padding: 25px 150px;
+    border: 2px solid rgb(125, 125, 126);
+    margin-top: 15px;
+    background-color: rgb(112, 112, 110);
+}
+
+.project-image-container {
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+}
+
+.project-info-container {
+    padding-left: 25px;
+    width: 200px;
+}
+
+#project-one {
+    animation: slide-in-from-right 3s forwards;
+}
+
+ #project-two {
+    display: flex;
+    flex-direction: important row-reverse ;
+    animation: slide-in-from-left 3s backwards;
+}
+
+#skill-section {
+    border: 2px solid black;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Roboto Slab', serif;
+}
+
+#emoji-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+#hero-section {
+    background-color:blue;
+    color:slategray;
+    text-align: center;
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@keyframes slide-in-from-right {
+    from {
+        transform: translateX(-100%);
+        border: none;
+    }
+    to {
+        transform: translateX(0);
+        border: 2px solid rgb(125, 125, 126);
+    }
+}
+
+@keyframes slide-in-from-left {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes phase-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
