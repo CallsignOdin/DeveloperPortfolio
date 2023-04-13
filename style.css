@@ -9,6 +9,8 @@ body {
 
 h2 {
     text-align: center;
+    margin-top: 5%;
+    font-size: 36px;
 }
 
 h1 {
@@ -56,6 +58,14 @@ footer p {
    display: inline-block;
 }
 
+.repeating-background {
+    position: absolute;
+    bottom: 1em;
+    right: -63em;
+    height: 54em;
+    max-width: none;
+}
+
 .project-section {
     width: 80%;
     display: flex;
@@ -72,6 +82,7 @@ footer p {
     padding: 25px 150px;
     border: 2px solid rgb(125, 125, 126);
     margin-top: 15px;
+    background-color: rgb(112, 112, 110);
 }
 
 .project-image-container {
@@ -83,6 +94,20 @@ footer p {
 .project-info-container {
     padding-left: 25px;
     width: 200px;
+}
+
+.tag-btn {
+    background-color:red;
+}
+
+
+
+#project-tag-btn-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
 }
 
 #project-one {

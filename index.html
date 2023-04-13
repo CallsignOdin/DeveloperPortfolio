@@ -9,7 +9,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9475b6c566.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <script src="/scripts/index.js"></script>
+    <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
     <nav>
@@ -20,10 +21,13 @@
         <a href="">Contact</a>
         <a href="">Github</a>
     </nav>
+
+    
+
     <main>
         <section id="hero-section">
             <h1>
-                Welcome to this refreshing era
+                Software Development
             </h1>
             <div id="skill-section">
                 <ul>
@@ -39,38 +43,77 @@
                 </div>
                 
             </div>
+            
         </section>
 
+        
+
         <h2>Projects</h2>
+
+        
         <section class="project-section">
+            <div id="project-tag-section">
+                <ul id="project-tag-btn-section">
+                    <li>Tags:</li>
+                    <li>
+                        <button class="tag-btn" onclick="changeBgColor(this)">Java</button>
+                    </li>
+                    <li>
+                        <button class="tag-btn" onclick="changeBgColor(this)">Javascript</button>
+                    </li>
+                    <li>
+                        <button class="tag-btn" onclick="changeBgColor(this)">Node.js</button>
+                    </li>
+                    <li>
+                        <button class="tag-btn" onclick="changeBgColor(this)">React.js</button>
+                    </li>
+                    <li>
+                        <button class="tag-btn" onclick="changeBgColor(this)">Golang</button>
+                    </li>
+                    <li>
+                        <button class="tag-btn" onclick="changeBgColor(this)">Gin.go</button>
+                    </li>
+                </ul>
+            </div>
             
 
             <section class="project-container" id="project-one">
                 <div class="project-image-container">
                     Holder of image
                 </div>
+                
+                
                 <div class="project-info-container">
                     <h3>Dice Project</h3>
                     <p>This project features a dice game written in Java</p>
+                    
+                </div>
+
+                <div class="technologies-used-container">
+                    <h3>Technologies</h3>
                     <ul>
-                        <li>Java</li>
-                        <li>Console Application</li>
-                        <li>Persistent data</li>
+                        <li><button class="tag-btn" onclick="changeBgColor(this)">Java</button></li>
+                        <li><button class="tag-btn" onclick="changeBgColor(this)">Spring Boot</button></li>
+                        <li><button class="tag-btn" onclick="changeBgColor(this)">TCP/IP API</button></li>
+                        <li><button class="tag-btn" onclick="changeBgColor(this)">JavaFX</button></li>
                     </ul>
                 </div>
             </section>
     
             <section class="project-container" id="project-two">
-                
+                <div class="technologies-used-container">
+                    <h3>Technologies</h3>
+                    <ul>
+                        <li><button class="tag-btn" onclick="changeBgColor(this)">Node.js</button></li>
+                        <li><button class="tag-btn" onclick="changeBgColor(this)">GraphQL</button></li>
+                        <li><button class="tag-btn" onclick="changeBgColor(this)">MySQL</button></li>
+                        <li><button class="tag-btn" onclick="changeBgColor(this)">React.js</button></li>
+                    </ul>
+                </div>
                 <div class="project-info-container">
                     <h3>Amplify Project</h3>
                     <p>This project features GraphQL to help users analyze their pomodoro consistency</p>
-                    <ul>
-                        <li>Node</li>
-                        <li>GraphQL</li>
-                        <li>MySQL</li>
-                        <li>React</li>
-                    </ul>
+                    
                 </div>
                 <div class="project-image-container">
                     Holder of image
