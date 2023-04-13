@@ -47,6 +47,38 @@ span {
     padding-left: 5px;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    text-align: center;
+    
+    padding-top: 25px;
+}
+
+input {
+    margin-top: 25px;
+}
+
+#form-container-header {
+    text-align: center;
+}
+
+#form-section {
+    background-color: rgb(55, 55, 92);
+}
+
+#form-container {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+
+#contact-message {
+    height: 150px;
+}
+
 footer {
     position: absolute;
     bottom: -50;
