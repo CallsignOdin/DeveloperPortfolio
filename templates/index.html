@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First refresh</title>
+    <title>Landing Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9475b6c566.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/style.css">
+    <script src="scripts/index.js"></script>
 </head>
 <body>
+    
     <nav>
         <h1>Joshua</h1>
 
@@ -26,7 +28,7 @@
     <main>
         <section id="hero-section">
             <h1>
-                Welcome to this refreshing era
+                Software Development
             </h1>
             <div id="skill-section">
                 <ul>
@@ -45,52 +47,133 @@
             
         </section>
 
-        
-
         <h2>Projects</h2>
 
-        
-        <section class="project-section">
-            
+        <div id="project-tag-section">
+            <ul id="project-tag-btn-section">
+                <li>Tags:</li>
+                <li>
+                    <button class="tag-btn tag-btn-choice" onclick="changeBgColor(this)"><b>Java</b></button>
+                </li>
+                <li>
+                    <button class="tag-btn tag-btn-choice" onclick="changeBgColor(this)"><b>Javascript</b></button>
+                </li>
+                <li>
+                    <button class="tag-btn tag-btn-choice" onclick="changeBgColor(this)"><b>Node.js</b></button>
+                </li>
+                <li>
+                    <button class="tag-btn tag-btn-choice" onclick="changeBgColor(this)"><b>React.js</b></button>
+                </li>
+                <li>
+                    <button class="tag-btn tag-btn-choice" onclick="changeBgColor(this)"><b>Golang</b></button>
+                </li>
+                <li>
+                    <button class="tag-btn tag-btn-choice" onclick="changeBgColor(this)"><b>Gin.go</b></button>
+                </li>
+            </ul>
+        </div>
+        <div class="stretcher">
+            <section class="project-section">
 
-            <section class="project-container" id="project-one">
-                <div class="project-image-container">
-                    Holder of image
-                </div>
-                <div class="project-info-container">
-                    <h3>Dice Project</h3>
-                    <p>This project features a dice game written in Java</p>
-                    <ul>
-                        <li>Java</li>
-                        <li>Console Application</li>
-                        <li>Persistent data</li>
-                    </ul>
-                </div>
-            </section>
-    
-            <section class="project-container" id="project-two">
+                <section class="project-container">
+                    <section id="project-one" class="project-header">
+                        <div class="project-image-container">
+                            <svg class="project-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="#37375c"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM153 289l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L71 337c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM265 255l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"/></svg>
+                        </div>
+                        <div class="project-info-container">
+                            <h3>Dice Project</h3>
+                            <p>This project features a dice game written in Java</p>
+                            <a href="https://github.com/CallsignOdin/DiceProject"><i class="fa-brands fa-github" style="color: #2c2c4a;"></i>Source Code</a>                 
+                        </div>
+        
+                        
+                    </section>
+                    <div class="project-container-footer">
+                        <h3>Technologies:</h3>
+                        <ul class="project-tech-list">
+                            <li><button class="tag-btn" onclick="changeBgColor(this)">Java</button></li>
+                            <li><button class="tag-btn" onclick="changeBgColor(this)">Spring Boot</button></li>
+                            <li><button class="tag-btn" onclick="changeBgColor(this)">TCP/IP API</button></li>
+                            <li><button class="tag-btn" onclick="changeBgColor(this)">JavaFX</button></li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="project-container">
+                    <section id="project-one" class="project-header">
+                        <div class="project-image-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="#37375c"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"/></svg>
+                        </div>
+                        <div class="project-info-container">
+                            <h3>Dice Project</h3>
+                            <p>This project features a dice game written in Java</p>                 
+                        </div>
+        
+                        
+                    </section>
+                    <div class="project-container-footer">
+                        <h3>Technologies:</h3>
+                        <ul class="project-tech-list">
+                            <li><button class="tag-btn" onclick="changeBgColor(this)">Java</button></li>
+                            <li><button class="tag-btn" onclick="changeBgColor(this)">Spring Boot</button></li>
+                            <li><button class="tag-btn" onclick="changeBgColor(this)">TCP/IP API</button></li>
+                            <li><button class="tag-btn" onclick="changeBgColor(this)">JavaFX</button></li>
+                        </ul>
+                    </div>
+                </section>
                 
-                <div class="project-info-container">
-                    <h3>Amplify Project</h3>
-                    <p>This project features GraphQL to help users analyze their pomodoro consistency</p>
-                    <ul>
-                        <li>Node</li>
-                        <li>GraphQL</li>
-                        <li>MySQL</li>
-                        <li>React</li>
-                    </ul>
-                </div>
-                <div class="project-image-container">
-                    Holder of image
-                </div>
+                <section class="project-container">
+                    <section id="project-one" class="project-header">
+                        <div class="project-image-container">
+                            <svg class="project-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="#37375c"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM153 289l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L71 337c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM265 255l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"/></svg>
+                        </div>
+                        <div class="project-info-container">
+                            <h3>Amplify Project</h3>
+                            <p>This project features GraphQL to help users analyze their pomodoro consistency</p>                 
+                            <a href="https://github.com/CallsignOdin/Amplify-Pomodoro"><i class="fa-brands fa-github" style="color: #2c2c4a;"></i>Source Code</a> 
+                        </div>
+        
+                        
+                    </section>
+                    <div class="project-container-footer">
+                        <h3>Technologies:</h3>
+                        <ul class="project-tech-list">
+                            <li><button class="tag-btn" onclick="changeBgColor(this)">Node.js</button></li>
+                            <li><button class="tag-btn" onclick="changeBgColor(this)">GraphQL</button></li>
+                            <li><button class="tag-btn" onclick="changeBgColor(this)">MySQL</button></li>
+                            <li><button class="tag-btn" onclick="changeBgColor(this)">React.js</button></li>
+                        </ul>
+                    </div>
+                </section>
             </section>
-        </section>
-       
+        </div>
+
+
+        <h2 id="form-container-header">Contact Form</h2>
+        <div class="stretcher">
+            <div id="form-section">
+            
+                <section id="form-container">
+                 
+                 <form action="">
+                     <input type="email" name="Email" id="" placeholder="Email">
+                     <input type="text" name="Subject" placeholder="Subject">
+                     <input type="text" id="contact-message" placeholder="Your message here">
+                     <input type="submit">
+                 </form>
+                </section>
+                 </div>
+        </div>
+        
+
+        
 
         
     </main>
     <footer>
         <p>Created by Joshua Olesiak circa 2023</p>
     </footer>
+
+    
 </body>
 </html>
