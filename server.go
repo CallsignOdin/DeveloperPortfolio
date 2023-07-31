@@ -8,6 +8,7 @@ func main() {
 
 	// Serve static files
 	router.Static("/css", "static/css")
+	router.Static("/scripts", "static/scripts")
 
 	// Load the HTML template
 	router.LoadHTMLGlob("templates/*")
